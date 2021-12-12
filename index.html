@@ -1,39 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    
+    <!--Aqui esta as tags do favicon-->
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
     <title>Cadastro mais pra ti</title>
 </head>
+
 <body>
-   <div>
-       <p>
-        Insisira os campos:
-        <p id="pnome">Nome <input type="text" placeholder="Escreva seu nome aqui"  name="txtnome" id="txtnome"></p>
-    
+    <form id="formulaio">
+    <div id="divdados">
+        <p id="txtdados">
+            Insisira os campos:
+        <p id="pnome">Nome <input type="text" placeholder="Escreva seu nome aqui" name="txtnome" id="txtnome"></p>
+
+        <p id="ptel"> Telefone <input type="tel" placeholder="(XX)XXXXX-XXXX" name="txttel" id="texttel"></p>
+
+        <p id="pemail">E-mail <input type="email" placeholder="aaaaaaaa@dddddd.com" name="txtemail" id="txtemail"></p>
+
+        <p></p>
+        
+
         <input type="button" value="Adicionar" onclick="adicionar()" id="btn">
 
 
 
-       </p>
+        </p>
 
 
 
 
 
 
+    </form>
+    </div>
 
-   </div>
+    <div id="res">
 
-   <div id="res">
-
-   </div>
-   <script src="script.js"></script>
+    </div>
+    <script src="script.js"></script>
 
     <footer>Desenvolvido por YanDev</footer>
 </body>
+
 </html>
